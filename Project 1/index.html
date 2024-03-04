@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D3 Project Starter Template</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <p style="font-size: 30px;">Project 1: Health in the USA</title>
+    <p style="font-size: 20px;">Nishanth Chidambaram</p>
+    <p style="font-size: 20px;">
+      Data Source: US Heart and Stroke Atlas -
+      https://www.cdc.gov/dhdsp/maps/atlas/index.htm.
+    </p>
+    <p style="font-size: 15px;">
+        Data Vis Libraries: D3, D3 Graph Gallery, Observable HQ
+      </p>
+    <!-- <button type="button" onclick="showScatter('scatter')">Scatter Plot</button>
+    <button type="button" onclick="showHist('histogram')">Histogram</button>
+    <button type="button" onclick="showChoro('choropleth')">Choropleth</button> -->
+    <br>
+    <div>
+        <label id="scatter_x_label" for="scatter_x">Data Attribute 1: </label>
+        <select id="attribute_1">
+          <option value="poverty_perc">poverty_perc</option>
+          <option value="median_household_income">median_household_income</option>
+          <option value="education_less_than_high_school_percent">education_less_than_high_school_percent</option>
+          <option value="air_quality">air_quality</option>
+          <option value="park_access">park_access</option>
+          <option value="percent_inactive">percent_inactive</option>
+          <option value="percent_smoking">percent_smoking</option>
+          <option value="urban_rural_status">urban_rural_status</option>
+          <option value="elderly_percentage">elderly_percentage</option>
+          <option value="number_of_hospitals">number_of_hospitals</option>
+          <option value="number_of_primary_care_physicians">number_of_primary_care_physicians</option>
+          <option value="percent_no_heath_insurance">percent_no_heath_insurance</option>
+          <option value="percent_high_blood_pressure">percent_high_blood_pressure</option>
+          <option value="percent_coronary_heart_disease">percent_coronary_heart_disease</option>
+          <option value="percent_stroke">percent_stroke</option>
+          <option value="percent_high_cholesterol">percent_high_cholesterol</option>
+        </select>
+    </div>
+    <div>
+        <label id="scatter_y_label" for="scatter_y">Data Attribute 2: </label>
+        <select id="attribute_2">
+          <option value="poverty_perc">poverty_perc</option>
+          <option value="median_household_income">median_household_income</option>
+          <option value="education_less_than_high_school_percent">education_less_than_high_school_percent</option>
+          <option value="air_quality">air_quality</option>
+          <option value="park_access">park_access</option>
+          <option value="percent_inactive">percent_inactive</option>
+          <option value="percent_smoking">percent_smoking</option>
+          <option value="urban_rural_status">urban_rural_status</option>
+          <option value="elderly_percentage">elderly_percentage</option>
+          <option value="number_of_hospitals">number_of_hospitals</option>
+          <option value="number_of_primary_care_physicians">number_of_primary_care_physicians</option>
+          <option value="percent_no_heath_insurance">percent_no_heath_insurance</option>
+          <option value="percent_high_blood_pressure">percent_high_blood_pressure</option>
+          <option value="percent_coronary_heart_disease">percent_coronary_heart_disease</option>
+          <option value="percent_stroke">percent_stroke</option>
+          <option value="percent_high_cholesterol">percent_high_cholesterol</option>
+        </select>
+    </div>
+
+    <br>
+    <!-- Add HTML content, SVG drawing area, ... -->
+    <div id="row1">
+      <svg id="histogram"></svg>
+      <svg id="scatter2"></svg>
+      <!-- <svg id="scatter"></svg> -->
+      <svg id="histogram2"></svg>
+    </div>
+    <!-- <svg id="choropleth"></svg> -->
+    <div id="choroDiv">
+      <div class="viz"></div>
+
+      <svg height="5" width="5" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <pattern
+            id="lightstripe"
+            patternUnits="userSpaceOnUse"
+            width="5"
+            height="5"
+          >
+            <image
+              xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg=="
+              x="0"
+              y="0"
+              width="5"
+              height="5"
+            ></image>
+          </pattern>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js" charset="utf-8"></script>
+
+    <!-- Our JS code - INCLUDING the new files-->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/scatter.js"></script> -->
+    <script src="js/scatter copy.js"></script>
+    <!-- <script src="js/scatter copy 3.js"></script> -->
+    <!-- <script src="js/histogram.js"></script> -->
+    <!-- <script src="js/histogram copy.js"></script> -->
+    <script src="js/histogram copy 2.js"></script>
+    <script src="js/choropleth.js"></script>
+    <script src="js/topojson.v3.js"></script>
+  </body>
+</html>
